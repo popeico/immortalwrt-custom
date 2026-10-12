@@ -21,7 +21,7 @@ sha256sum -c sha256sums.txt
 - ROOTFS partition: 768 MB
 - Added packages: `curl`, `openssl-util`, `htop`, `coreutils-ls`, `coreutils-base64`, `v2ray-geoip`, `v2ray-geosite`, `qemu-ga` (x86 only)
 - `dae` v2.1.1 and `naiveproxy` preinstalled under `/usr/bin` (upstream binaries, not ImmortalWrt feed packages); upgrade them on-device later with `upgrade-bin <dae|naiveproxy>`
-- First boot enables `sshd` and `dae` (dae ships with a template config — edit `/etc/dae/config.dae` before use)
+- First boot enables `sshd`. `dae`/`naiveproxy` are installed but **not** enabled — they must not interfere with normal boot; after writing `/etc/dae/config.dae`, run `/etc/init.d/dae enable && /etc/init.d/dae start`
 
 ## Source & license
 
