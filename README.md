@@ -12,7 +12,8 @@ Custom ImmortalWrt 25.12 firmware images. Release assets only.
 Verify integrity after download:
 
 ```sh
-sha256sum -c sha256sums.txt
+sha256sum -c sha256sums-friendlyarm_nanopi-r2s.txt  # R2S
+sha256sum -c sha256sums-generic.txt                # x86/64
 ```
 
 ## What's customized (vs stock ImmortalWrt 25.12)
